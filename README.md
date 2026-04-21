@@ -30,6 +30,8 @@ The program reads a binary input file byte-by-byte and prints decoded instructio
 |- 3ATS.OBJ      ; Object file (build artifact)
 |- 3ATS.EXE      ; Executable (build artifact)
 |- 3ATS.MAP      ; Linker map file (build artifact)
+|- ForTest.asm   ; .asm file for testing
+|- ForTest.com   ; Object file for disassembling
 `- README.md
 ```
 
@@ -62,7 +64,7 @@ tlink 3ATS.obj
 Example:
 
 ```bat
-3ATS.EXE SAMPLE.BIN
+3ATS.EXE ForTest.com
 ```
 
 If the file cannot be opened or read, the program prints:
